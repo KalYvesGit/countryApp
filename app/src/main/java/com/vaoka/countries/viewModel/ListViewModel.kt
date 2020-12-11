@@ -40,6 +40,7 @@ class ListViewModel: ViewModel() {
                 override fun onSuccess(value: List<Country>?) {
                     countries.value = value
                     countryLoadError.value = false
+                    loading.value = false
                 }
 
                 override fun onError(e: Throwable?) {
